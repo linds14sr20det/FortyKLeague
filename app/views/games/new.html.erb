@@ -1,0 +1,12 @@
+<%= form_for @game, url: {action: "create"} do |f| %>
+  <div>
+    <span>player a army</span>
+    <%= f.text_field :player_a_army %>
+  </div>
+
+  <div>
+    <span>player b army</span>
+    <%= f.text_field :player_b_army %>
+  </div>
+  <%= f.submit "Create" %>
+<% end %>
